@@ -4,7 +4,7 @@ model: kubernetes
 params:
   kind: services
 categories: [Tutorials]
-description: Explore Kubernetes Services using Meshery using Meshery Playground, an interactive live environment, through a series of hands-on exercises.
+description: Explore Kubernetes Services using Meshery Playground, an interactive live environment, through a series of hands-on exercises.
 weight: 3
 aliases:
 - /guides/tutorials/kubernetes-services
@@ -14,7 +14,7 @@ aliases:
 
 ### Introduction
 
-In this tutorial, we'll learn to implement Kubernetes **Services**, the resources responsible for exposing applications inside and outside the cluster. Using Meshery Playground, an interactive live cluster environment, we'll perform hands-on labs to gain practical experience with the Kubernetes Services, without writing any YAML.
+In this tutorial, we'll learn to implement Kubernetes **Services**, the resources responsible for exposing applications inside and outside the cluster. Using Meshery Playground, an interactive live cluster environment, we'll perform hands-on labs to gain practical experience with Kubernetes Services, without writing any YAML.
 
 > **NOTE:** If this is your first time working with Meshery Playground, consider starting with the [Exploring Kubernetes Pods with Meshery Playground](/kanvas/tutorials/kubernetes/kubernetes-pods) tutorial first or [Exploring Kubernetes Deployments with Meshery](/kanvas/tutorials/kubernetes/kubernetes-deployments).
 
@@ -100,7 +100,7 @@ Learn how to create, manage, and explore _Kubernetes Services_ to expose applica
 3. Connect the Service to the Deployment: Click over the service component until green dots appear, click the arrow and select network. Drag to the deployment. This creates a Network link.  
   ![](/kanvas/tutorials/images/kubernetes-services/2025-12-13_1.png)
 
-From the Actions Tab, Undeploy the deployment first and then, validate and dry-run the new design, resolve any errors that may arise. Now, deploy the design. A pop up in the bottom right will confirm that the design is successfully configured.
+From the Actions Tab, Undeploy the deployment first and then, validate and dry-run the new design, resolve any errors that may arise. Now, deploy the design. A pop-up in the bottom right will confirm that the design is successfully configured.
 
   ![](/kanvas/tutorials/images/kubernetes-services/2025-12-13_2.png)
 
@@ -139,7 +139,7 @@ To allow external access, we’ll use a NodePort service. For simplicity, I will
 Now switch to Operator mode, click on any component to view details(like type or selector) about the Service or the Pod.
   ![](/kanvas/tutorials/images/kubernetes-services/2025-12-13_4.png)
 
-Note that this service is mapped NodePort and is accessible on the **Node’s IP address**.
+Note that this service is mapped to a NodePort and is accessible on the **Node’s IP address**.
 
 Expand the details section and you will see a NodePort value (30091), this means the service is exposed on each Node’s IP at port 30091. You can access the app externally via `http://<NodeIP>:30091`.  
   ![](/kanvas/tutorials/images/kubernetes-services/2025-09-06_17.png)
